@@ -57,7 +57,7 @@ class Picture:
     repetido = []
     for i in range(len(self.img)):
         repetido.append(self.img[i] * n)
-    return Picture(None)
+    return Picture(repetido)
 
   def verticalRepeat(self, n):
     return Picture(None)
