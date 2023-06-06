@@ -1,0 +1,217 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Laboratorio 04}
+\author{Tema: Python}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+  \begin{tabular}{|c|c|c|}
+    \hline
+    Profesor & Escuela & Asignatura \\
+    \hline
+    Prof. Annibal Sardon & EPIS & Programacion Web 2 \\
+    
+    \hline
+  \end{tabular}
+\end{center}
+\begin{center}
+  \begin{tabular}{|c|c|c|}
+    \hline
+    Laboratorio & Tema & Duracion \\
+    \hline
+    04  & Python & 04 Horas \\
+    \hline
+  \end{tabular}
+\end{center}
+\begin{center}
+  \begin{tabular}{|c|c|c|}
+    \hline
+    Semestre academico & Fecha de inicio & Fecha de entrega \\
+    \hline
+    2023 - A  & 29 Mayo 2023 & 06 Junio 2023 \\
+    \hline
+  \end{tabular}
+\end{center}
+\begin{center}
+  \begin{tabular}{|c|c|c|}
+    \hline
+    Estudiante & Grupo \\
+    \hline
+    Carrasco Choque Arles Melvin & B \\
+    \hline
+  \end{tabular}
+\end{center}
+
+
+\section{Resolucion de ejercicios}
+URL de GitHub : \href{https://github.com/carrascoArles/lab04-pweb2.git}{https://github.com/carrascoArles/lab04-pweb2.git}.
+\subsection{Clase Pictures}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=1\textwidth]{imagenes/cap1.png}
+  \label{fig:imagen-ejemplo}
+\end{figure}
+
+El metodo negative lo quehace es convertir los caracteres de la imagen que le damos y lo
+da de otro color y lo va hacer con un metodo base que viene a ser el invcolor pero este solo convierte caracteres por lo que se usa for para cada fila y devolver el arreglo ya convertido.\\
+Luego tenemos el metodo join lo que hace este solo es juntar dos imagenes en la misma fila, para esto vamos a crear el array y con el for vamos a recorrer todas las filas para asi poder usar el append() que su funcion es agregar al final del arreglo un valor, se itera y lo retornamos.\\
+El metodo up es basico solo usa el + para juntar imagenes pero cada una por separado en cada fila.
+
+\begin{figure10}
+  \centering
+  \includegraphics[width=1\textwidth]{imagenes/cap2.png}
+  \label{fig:imagen-ejemplo}
+\end{figure10}
+
+luego hacemos uso del under() este va a recorrer por filas y columnas para verificar los valores de la imagen que se va a poner, entonces tenemos dos casos posibles, si es que el caracter[i][j] de p esta vacio en ese caracter pues solo se pone la imagen del cuadrado, en cambio si p tiene un valor existente se pone ese.\\
+
+Para el horizontal repeat,muy similar al join, se va recorrer cada fila, agregando con el append una multiplicacion de cada figura siendo estas por filas.
+
+En cambio en el vertical repeat,muy similar al up ,se extrae la imagen propio y completa y solo se multiplica por el tamaño ya que esto lo hace en una fila aparte, mas abajo.
+
+\subsection{Ejercicio a}
+\begin{figure1}
+  \centering
+  \includegraphics[width=1\textwidth]{imagenes/cap3.png}
+  \label{fig:imagen-ejemplo}
+\end{figure1}
+
+Se usaron los metodos negative,join y up, se usa las variables predeterminada de las figuras, como se hace por lineas, solo se juntan con el join los primeros caballos, luego solo se invierten y al final se usa un up para concatenar imagenes de manera vertical.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{imagenes/pr4.png}
+  \label{fig:imagen-ejemplo}
+\end{figure}
+
+\subsection{Ejercicio b}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=1\textwidth]{imagenes/cap5.png}
+  \label{fig:imagen-ejemplo}
+\end{figure}
+
+Se hizo practicamente lo mismo que el primero, pero en este caso se agrego el vertical mirror para que los caballos miren a otro lado en la segunda fila, y se junta con up.
+
+\begin{figure2}
+  \centering
+  \includegraphics[width=0.8\textwidth]{imagenes/pr6.png}
+  \label{fig:imagen-ejemplo}
+\end{figure2}
+
+\subsection{Ejercicio c}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=1\textwidth]{imagenes/cap7.png}
+  \label{fig:imagen-ejemplo}
+\end{figure}
+
+Se uso el horizontal repeat ya que si se hubiera usado join nos hubiera salido una cadena muy grande de joins
+
+\begin{figur9}
+  \centering
+  \includegraphics[width=0.8\textwidth]{imagenes/pr8.png}
+  \label{fig:imagen-ejemplo}
+\end{figure9}
+
+\subsection{Ejercicio d}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=1\textwidth]{imagenes/cap9.png}
+  \label{fig:imagen-ejemplo}
+\end{figure}
+
+Como en el anterior se uso el horizontal repeat pero ahora con los cuadrados concatenando de 2 y empezando por el blanco.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{imagenes/pr10.png}
+  \label{fig:imagen-ejemplo}
+\end{figure}
+
+\subsection{Ejercicio e}
+\begin{figure4}
+  \centering
+  \includegraphics[width=1\textwidth]{imagenes/cap11.png}
+  \label{fig:imagen-ejemplo}
+\end{figure4}
+
+Se concatena dos cuadrados ya que estos se repiten y solo se repite 4 veces emezando ahora con el negro.
+
+\begin{figure5}
+  \centering
+  \includegraphics[width=0.8\textwidth]{imagenes/pr12.png}
+  \label{fig:imagen-ejemplo}
+\end{figure5}
+\subsection{Ejercicio f}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=1\textwidth]{imagenes/cap13.png}
+  \label{fig:imagen-ejemplo}
+\end{figure}
+
+En este ejercicio primero lo generalize para luego repetirlo, primero agregue dos cuadrados uno enciama del otro luego lo duplique verticalmente, seguidamente se dublico horizontalmente pero con los cuadrados negativos, y para finalizar solo lo multiplique horizontalmente 4 veces.
+
+\begin{figure6}
+  \centering
+  \includegraphics[width=0.8\textwidth]{imagenes/pr14.png}
+  \label{fig:imagen-ejemplo}
+\end{figure6}
+\subsection{Ejercicio g}
+\begin{figure7}
+  \centering
+  \includegraphics[width=1\textwidth]{imagenes/cap14.png}
+  \label{fig:imagen-ejemplo}
+\end{figure7}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=1\textwidth]{imagenes/cap15.png}
+  \label{fig:imagen-ejemplo}
+\end{figure}
+
+Primero inicialize las variables para reciclarlas despues. Haciendo uso del under ponemos cada ficha en su respectivo cuadrado. ya sean las blancas como las negras.\\
+
+Luego vamos con las bases que que su funcion es poner las fichas para jugar, la base1 va a ser uso de puro join para juntar los cuadrados con sus fichas, para los peones solo se repite en conjunto de dos en cuadrados blancos y negros, para el jugador 2 seria lo mismo.\\
+
+Para la separacion del medio reutilize el codigo del ejercicio anterior y solo lo agregue, haciendo uso del up para juntar las filas y salgan juntas.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.6\textwidth]{imagenes/pr16.png}
+  \label{fig:imagen-ejemplo}
+\end{figure}
+
+\section{Cuestionario}
+¿Qué son los archivos *.pyc?\\
+Son archivos creados creados por el sistema interprete de phyton, se crean cuendo compilas un archivo por primera vez y se importan los modulos, guarda lo neceseraio, para que posteriormente cuando queramos abrir el mismo archivo este lo abra mas rapido sin necesidad de crear otro archivo\\
+
+¿Para qué sirve el directorio pycache?\\
+Es donde se guardan los pyc que vienen hacer lo que se importa de los modulos puestos en el archivo.\\
+
+¿Cuáles son los usos y lo que representa el subguión en Python?\\
+El subguion se usa como cualquier otra variables, pero en terminos de comprension suele ser usada como una variable irrelevante o que no se va a usar en el momento que fue creado, como una variable temporal y una variable de descarte \\
+
+\section{Conclusiones}
+
+El lenguaje python es comodo, pero un poco confuso en cuanto a su sencilles, las variables de entorno son de mucha utilidad ya que para este laboratorio se importaron muchos modulos los cuales se importaron y servian para imprimir en pantalla los valores de la imagen, como toda funciona con objetos se trabajo con una clase la clase Pictures y en base a esa solo se llamaban los metodos, algo que me parecio interesante es el uso del draw() algo que no habia usado, claro que el ajedres no es funcional pero es como una imagen construida por filas como una imprenta.
+
+
+
+\end{document}
