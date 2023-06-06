@@ -53,7 +53,12 @@ class Picture:
     for i in range(len(self.img)):
         line = ""
         for j in range(len(self.img[i])):
-    #tiene que recorrer en cada cuadrado como matriz para agregarle las figuras
+            if p.img[i][j] == " ":
+                line += self.img[i][j]
+                
+            else:line += p.img[i][j]
+
+        image.append(line)
     return Picture(image)
   
   def horizontalRepeat(self, n):
