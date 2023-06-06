@@ -35,3 +35,19 @@ knightNsquareN = squareN.under(knightN)
 bishopNsquareN = squareN.under(bishopN)
 pawnNsquareN = squareN.under(pawnN)
 queenNSquare = squareN.under(queenN)
+
+
+
+base1 = rockNsquare.join(knightNsquareN).join(bishopNsquare).join(queenNSquare).join(kingNSquare).join(bishopNsquareN).join(knightNsquare).join(rockNsquareN)
+peones12 = (pawnNsquareN.join(pawnNsquare)).horizontalRepeat(4)
+jug1=base1.up(peones12)
+
+conjunto = square.up(square.negative())
+conjunto2 = conjunto.verticalRepeat(2)
+conjunto3 = conjunto2.join(conjunto2.negative())
+conjunto4 = conjunto3.horizontalRepeat(4)
+
+peones2 = (pawnSquare.join(pawnSquareN)).horizontalRepeat(4)
+base21 = rockSquareN.join(knightSquare).join(bishopSquareN).join(queenSquare).join(kingSquare).join(bishopSquare).join(knightSquareN).join(rockSquare)
+jug2=peones2.up(base21)
+draw(jug1.up(conjunto4).up(jug2))
