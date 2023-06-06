@@ -49,7 +49,12 @@ class Picture:
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
         figura actual """
-    return Picture(None)
+    image = []
+    for i in range(len(self.img)):
+        line = ""
+        for j in range(len(self.img[i])):
+    #tiene que recorrer en cada cuadrado como matriz para agregarle las figuras
+    return Picture(image)
   
   def horizontalRepeat(self, n):
     """ Devuelve una nueva figura repitiendo la figura actual al costado
